@@ -84,7 +84,7 @@ class Venta{
             $objItem = new Item($registrarCant,$objProducto);
             $coleccionItems=$this->getRefcolItemsVendidos();
             array_push($coleccionItems,$objItem);
-            $coleccionItems=$this->setRefcolItemsVendidos();
+            $this->setRefcolItemsVendidos($coleccionItems);
             $realizarVenta = true;
         }
         return $realizarVenta;
